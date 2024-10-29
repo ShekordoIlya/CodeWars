@@ -29,3 +29,30 @@ function getSum(a, b) {
 //-----------------------------------
 
 //Task 3
+function getMiddle(s) {
+  let symb = "";
+  let count = 0;
+  let mid = 0;
+  let newArr = [];
+
+  const arr = s.split("");
+
+  for (let i = 0; i < arr.length; i++) {
+    symb += arr[i];
+    count++;
+  }
+
+  mid = count / 2;
+
+  if (count % 2 == 0) {
+    newArr = arr.splice(mid - 1, 2).join("");
+  }
+
+  if (count % 2 != 0) {
+    newArr = arr.splice(Math.round(mid - 1), 1).join("");
+  }
+
+  return newArr;
+}
+
+console.log(getMiddle("testing"));
