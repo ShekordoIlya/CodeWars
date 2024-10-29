@@ -55,4 +55,8 @@ function getMiddle(s) {
   return newArr;
 }
 
-console.log(getMiddle("testing"));
+//-----------------------------------
+//Task 4
+function boolToWord(bool) {
+  return bool ? "Yes" : "No";
+}
