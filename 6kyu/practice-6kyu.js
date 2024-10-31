@@ -25,3 +25,16 @@ function narcissistic(value) {
   }
 }
 console.log(narcissistic(153));
+// --------------------------------------
+
+// Task 1
+function hasUniqueChars(str) {
+  let obj = {};
+  for (let i = 0; i < str.length; i++) {
+    if (obj[str[i]]) return false;
+    obj[str[i]] = 1;
+  }
+  return true;
+}
+
+console.log(hasUniqueChars("  nAa"));
